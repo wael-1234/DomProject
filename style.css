@@ -1,0 +1,303 @@
+*{
+margin: 0;
+padding:0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+/* ---------------------- styling Home Site --------------------*/
+body{
+    font-family: Arial;
+}
+
+nav {
+    background-color: whitesmoke;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height: max-content;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    margin-bottom: 10%;
+    z-index: 2;
+}
+.logo{
+    color: gray;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 50px;
+    font-weight: bold;  
+}
+
+nav ul{
+    float: right;
+    margin-right: 1%;
+    height: max-content;
+}
+
+nav ul li{
+    row-gap: row;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 50px;
+    margin: 0 5px;    
+}
+
+nav ul li a{
+    color:gray;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 5%;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color: green;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav ul ul{
+    position: fixed;
+    display: none;
+    background-color: white;
+    height: 40%;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 1.5%;
+    justify-content: space-around;
+}
+
+nav ul li:hover > ul{
+   display: block;
+   margin-top: 0%;
+   margin-bottom: 0;
+   padding: 0;
+   width: 150px;
+   height: max-content;
+   border-radius: 10px;
+}
+
+nav ul li ul li a{
+    margin-bottom: 2%;
+    font-size: 15px;
+}
+
+nav ul li ul li a:hover{
+    color:#00b39b ;    
+}
+
+
+
+
+ .shop{
+     margin-top: 200px;
+     margin-left: auto;
+     margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    width: 70%;
+    position: relative;
+ }
+ .shop h1{
+     font-size: 20px;
+     font-family: arial;
+     color: hsl(240, 100%, 55%);
+     float: left;
+     margin-top:8%;
+     margin-left: 6%;
+ }
+.shop img{
+    border-radius:10px;
+    width: 220px;
+    height: 200px;
+}
+ .shop button{
+     float: right;
+     margin: 5%;
+     padding: 3%;
+     color: whitesmoke;
+     border-radius: 8px;
+     background-color: hsl(240, 100%, 55%);
+ }
+ .shop button:hover{
+    background-color: hsl(240, 100%, 35%);
+ }
+
+ .shop > div{
+    background-color: rgb(243, 236, 242);
+    width: 30%;
+    height: max-content;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    padding :10px; 
+    justify-content: space-between;
+    cursor: pointer;  
+ }
+ .shop > div:hover{
+     transform: scale(1.05);
+     filter: brightness(105%);
+     box-shadow: thistle;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ }
+
+.connection{
+    margin: 20px;
+    display: inline-block;
+    row-gap: row;
+}
+
+.connection form{
+    margin: auto;
+}
+
+.connection > div{
+    margin: auto;
+}
+
+.form-control{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+
+footer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+footer h{
+    font-family: arial;
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+footer a{
+    text-align: center;
+    text-decoration: none;
+    color:hsl(240, 100%, 35%);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+/* ---------------------- styling cart --------------------*/
+.container{
+    position: relative;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.article1,
+.article2{
+    margin-top: 50px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+}
+ h2{
+    font-size: 25px;
+    text-align: center;
+}
+.article1 > div,
+.article2 > div
+{
+    width: max-content;
+    display: flex;
+    row-gap: row;
+    display: inline-block;
+    overflow: hidden;
+    height: max-content;
+}
+input{
+    width: 60px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 5px;
+}
+.article1 > div button,
+.article2 > div button{
+    width: 40px;
+    height: 37px;
+    margin: 0 10px 10px 10px;
+    background-color:#00b39b;
+    color: gray;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.cart{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0;
+    position: fixed;
+}
+
+.cart h1{
+    font-size: 30px;
+    color: blue;
+    margin: 0;
+}
+
+.cart img{
+    width: 200px;
+    height: 50px;
+    margin: 0;
+}
+
+.quantity{
+    height: 35px;
+    width: 35px;
+}
+
+.total{
+    position: relative;
+ 
+    width: max-content;
+    margin:-50px 100px 200px 200px;
+    float: right;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    text-align: center;
+}
+.total h1{
+    font-size: xx-large;
+}
+.total h2 {
+    color: hsl(240, 100%, 35%);
+    margin-right: 10px;
+    margin-left: 25px;
+}
+.total h3 {
+    color: gold;
+}
+
+.remove 
+{
+    width:  max-content;
+    height: max-content;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+
+.remove:hover
+{
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+}
